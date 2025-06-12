@@ -1,0 +1,111 @@
+{
+    max-width:100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body 
+{
+background:lightgray ;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#container
+{
+    width: 1100px;
+    margin: 0px;
+    border: 1px solid black;
+}
+header
+{
+    background: rgb(47, 188, 238);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid;
+}
+nav
+{
+background: rgb(76,241);
+height: 50px;
+border bottom: 1px solid black;
+}
+nav ul li 
+{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+.clearfix
+{
+    clear: both;
+
+}
+#content 
+{
+    float: left;
+    width: 80%;
+    background: rgb(47, 188, 238);
+    min-height: 470px;
+}
+aside
+{
+    float: left;
+    width: calc(20% - 20px);
+    background: rgb(47, 188, 238);
+    padding: 10px;
+}
+.article 
+{
+    color: black;
+    margin-top: 15px;
+    margin-bottom:  15px;
+    border-bottom: 1px solid;
+}
+.article h2 
+{
+    font-size: 23px;
+}
+
+/*responsivo para pantallas */
+@media  (max-width: 768) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+
+    }
+
+    .letreros h1 {
+        font-size: 20px;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
+    
+}
+
+/*adaptativo para pantalla*/
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .main-content {
+        width: 100%;
+        float: none;
+    }
+
+   
+@media (min-width: 1024px) {
+    body {
+        font-size: 25px;
+    }
+    .main-content {
+        width: 100%;
+        float: none;
+    }
+}
+}
